@@ -107,3 +107,14 @@ let user3 = {
 };
 
 user3.sayHi(); //Ilya
+
+//Constructor Function
+function User(name) {
+    this.name = name;
+    this.isAdmin = false;
+}
+
+let user4 = new User("Jack");
+
+alert(user4.name); //Jack
+alert(user4.isAdmin); //false
